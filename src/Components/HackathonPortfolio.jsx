@@ -31,43 +31,36 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "Research Intern @ University of Alberta",
+    title: "Plantei",
     description:
-      "I was an international research intern in the Khaled Barakat's lab in the Faculty of Pharmacy and Pharmaceutical Sciences, working on a project called 'Applications of Machine Learning in Drug Discovery'. I spent four months in Canada to develop the project.",
+      "1st place @ SheHacks2021: Developing a mobile application with the aim of teaching users how to create their own vegetable gardens at home, while also providing lessons on nutrition education and offering easy recipes.",
+    url: "https://youtu.be/nJFoDysb9yg",
+  },
+  {
+    title: "PAND",
+    description:
+      "2nd place @ HackSSI2021: Development of a project using Vue.js, express and Nodejs. It was a mobile app that searches for places with accessibility for people with disabilities by reviews and filters for each disability.",
     url: "#",
   },
   {
-    title: "Research Associate @ Young Scientist Program (BMSIS)",
+    title: "ConectaRH",
     description:
-      "BMSIS is an international community committed to building a sustainable future and fostering public interest in science. I am involved in the project 'Improving Teacher Feedbacks in Science Learning' with Dr. Lev Horodyskyj.",
+      "1st place @ Experimenta!: It was a virtual platform to automatizate and accelerate the process and communication between human resources and employees. Its functionalities were a chatbot, departament overview and feedback system.",
     url: "#",
   },
   {
-    title: "Academic Vice President @ DASIUSP",
+    title: "TACTIL",
     description:
-      "I am responsible for coordinate the academic team and its tasks, such as disseminate research opportunities, organizing extra classes, courses and lectures for the students of the bachelor.",
-    url: "#",
-  },
-  {
-    title: "Student Representative @ USP",
-    description:
-      "I represent  undergraduate students in the coordination of the Information Systems Comitee at EACH-USP, bringing their needs and point of view to create strategies.",
-    url: "#",
+      "3rd place @ PaySmart Innovathon: Development of an idea of a project called TACTIL, technology that turns existent e-banking websites in acessible websites for people with disabilities.",
+    url: "https://youtu.be/VBkMN17Ezqw",
   },
 ];
 
 const Portfolio = () => {
   return (
-    <section className="light" id="portfolio">
-      <h2>Some Experiences</h2>
+    <section className="light" id="hackathon">
+      <h2>Hackathon Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
-            alt={imageAltText}
-          />
-        </div>
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>
@@ -77,6 +70,13 @@ const Portfolio = () => {
               <p className="small">{project.description}</p>
             </div>
           ))}
+        </div>
+        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+          <img
+            src={image}
+            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            alt={imageAltText}
+          />
         </div>
       </div>
     </section>
