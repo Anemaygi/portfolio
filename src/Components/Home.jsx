@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /**
  * Home component
  *
@@ -25,12 +26,17 @@ import image from "../images/server-wall.jpg";
 const imageAltText = "woman holding laptop standing by server room with glass wall";
 
 const Home = ({ name, title }) => {
+  const headingStyle = {
+    textAlign: 'center', // Use camelCase for CSS properties
+  };
+  
   return (
     <section id="home" className="dark">
       <img className="background" src={image} alt="" />
       <div style={{ position: "absolute", top: "30%", left: "2rem" }}>
         <h1>{name}</h1>
         <h2>{title}</h2>
+        <h3 style={headingStyle}>Find me on <a href="https://www.linkedin.com/in/gianemayumi/">LinkedIn</a> or <a href="https://github.com/Anemaygi">Github</a></h3>
       </div>
       <div style={{ position: "absolute", bottom: "8rem", left: "50%" }}>
         <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
